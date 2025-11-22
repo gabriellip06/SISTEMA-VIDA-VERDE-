@@ -1,0 +1,6 @@
+-- Deletar uma venda e seus itens
+DELETE FROM ItemVenda WHERE id_venda = 1;
+DELETE FROM Venda WHERE id_venda = 1;
+
+-- Deletar um cliente (se não houver vendas pendentes)
+DELETE FROM Cliente WHERE id_cliente = 1;

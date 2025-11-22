@@ -1,0 +1,16 @@
+-- Listar todos os clientes
+SELECT * FROM Cliente;
+
+-- Listar produtos com estoque
+SELECT p.nome, p.preco, e.quantidade
+FROM Produto p
+JOIN Estoque e ON p.id_produto = e.id_produto;
+
+-- Listar vendas
+SELECT * FROM Venda;
+
+-- Itens de uma venda
+SELECT p.nome, iv.quantidade, iv.subtotal
+FROM ItemVenda iv
+JOIN Produto p ON iv.id_produto = p.id_produto
+WHERE iv.id_venda = 1;

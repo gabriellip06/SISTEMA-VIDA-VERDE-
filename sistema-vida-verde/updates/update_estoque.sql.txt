@@ -1,0 +1,6 @@
+-- Atualizar estoque após uma venda
+UPDATE Estoque e
+SET quantidade = quantidade - iv.quantidade
+FROM ItemVenda iv
+WHERE e.id_produto = iv.id_produto
+  AND iv.id_venda = 1;

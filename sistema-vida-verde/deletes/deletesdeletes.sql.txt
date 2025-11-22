@@ -1,0 +1,15 @@
+-- ============================================
+-- DELETES - SISTEMA VIDA VERDE
+-- ============================================
+
+-- 1) Remover um item de venda específico
+DELETE FROM ItemVenda
+WHERE id_item = 4;
+
+-- 2) Deletar um cliente sem compras (exemplo)
+DELETE FROM Cliente
+WHERE id_cliente = 3;
+
+-- 3) Remover produto descontinuado
+DELETE FROM Produto
+WHERE id_produto = 3;
